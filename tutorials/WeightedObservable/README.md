@@ -13,7 +13,7 @@ To Generate MC data for normalisation integral calculation
 
 //////////////////////////////////////////////////////////////////
 ### Background Subtraction
-First I need to perform an sPlot fit to extract signal from background. This is exactly the same as for testSimple so heere I just copy the code to perform this in bins. This is file sPlotBins and you should be able to just run with brufit sPlotBinsBins.C. This will perform 4 fits split in Eg and save the results and weights in outSignal
+First I need to perform an sPlot fit to extract signal from background. This is exactly the same as for testSimple so heere I just copy the code to perform this in bins. This is file sPlotBins and you should be able to just run with `brufit sPlotBinsBins.C`. This will perform 4 fits split in Eg and save the results and weights in outSignal
 
 //////////////////////////////////////////////////////////////////////
 ### Fitting Observable
