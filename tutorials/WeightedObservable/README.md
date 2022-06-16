@@ -24,11 +24,12 @@ Make a PDF class called PhiAsymmetry which depends on variable Phi and in additi
 
 RooFit autogenerate custom pdf classes via the RooClassFactory. Here we extend this to pdfs inheriting from RooHSAbsEventsPDF - the class that handles simulated event trees for PDF integration and model event generation.
 To make the skeleton code we use the THSSkeleton class :
+```
    brufit
    root [0] .L RooFitSkeleton.cpp+
    root [1] RooFitSkeleton skel;
    root [2] skel.CreateRooFitEventsPDF("PhiAsymmetryPDF","Phi,Pol,CAT:PolState","A,B")
-
+```
 This creates a PDF that will fit variables in the input tree called Phi and Pol, with a RooCategory PolState (for asymmmetries) and with fit parameters called A and B. The user now has to define the fit function themselves. Open MyNewPDF.cxx; scrolll down to the evaluate() function (Nothing else should need edited) Replace the default return 1.0; with a suitable fit function :
 
      	     Double_t MyNewPDF::evaluateData() const 
