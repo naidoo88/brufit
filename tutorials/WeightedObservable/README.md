@@ -20,7 +20,7 @@ First I need to perform an sPlot fit to extract signal from background. This is 
 
 #### Making a new PDF class
 
-Make a PDF class called PhiAsymmetry which depends on variable Phi and in addition the magitude of polarisation Pol and the polarisation state PolState, both of which are also recoreded in the tree. It has 2 fit parameters A and B which will be the cos and sin coefficeients respectively.
+Make a PDF class called PhiAsymmetry which depends on variable Phi and in addition the magitude of polarisation Pol and the polarisation state PolState, both of which are also recorded in the tree. It has 2 fit parameters A and B which will be the cos and sin coefficeients respectively.
 
 RooFit autogenerate custom pdf classes via the RooClassFactory. Here we extend this to pdfs inheriting from RooHSAbsEventsPDF - the class that handles simulated event trees for PDF integration and model event generation.
 To make the skeleton code we use the THSSkeleton class :
